@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Saurashtra&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", sans-serif;
+  --font-mono: "Noto Sans Saurashtra", sans-serif;
+  --breakpoint-md: "768px";
+}
+
+@layer base {
+  .list {
+    @apply cursor-pointer text-gray-500 hover:text-red-500;
+  }
+  .inherit {
+    @apply mb-40 px-18 py-10;
+  }
+  .para {
+    @apply cursor-pointer font-mono text-2xl text-gray-700 capitalize hover:text-red-500;
+  }
+  .act {
+    @apply border-[0_0_5px_0] border-red-600 pb-3;
+  }
+}
