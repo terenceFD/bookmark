@@ -16,7 +16,7 @@
     @apply mb-40 px-18 py-10;
   }
   .para {
-    @apply cursor-pointer font-mono text-2xl text-gray-700 capitalize hover:text-red-500;
+    @apply cursor-pointer font-mono text-lg text-gray-700 capitalize hover:text-red-500;
   }
   .act {
     @apply border-[0_0_5px_0] border-red-600 pb-3;
