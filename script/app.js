@@ -6,7 +6,11 @@ const bookMark = queryAll('.Bookmark'),
      changeEl = queryAll('.change'),
      closeBtn = queryAll('.close'),
      runEl = queryAll('.run'),
-     icon = queryAll('.icon');
+     icon = queryAll('.icon'),
+     item = document.querySelector('#items'),
+     ham = document.querySelector('#ham'),
+     itclose = document.querySelector('#itclose');
+
 
 changeEl.forEach((chg, idx) => {
      chg.addEventListener('click', () => {
@@ -44,3 +48,10 @@ function closeRun() {
      })
 }
 
+ham.addEventListener('click', () => {
+     item.classList.remove('hidden')
+
+})
+itclose.addEventListener('click', () => {
+     item.classList.add('hidden')
+})
